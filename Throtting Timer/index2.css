@@ -1,0 +1,57 @@
+body {
+    font-family: 'Castellar', sans-serif;
+    background-color: #6c6b6b;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-image: url("https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recipeSearch {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: rgb(5, 187, 238) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(143, 143, 252);
+    font-weight: bold;
+    font-family: 'Algerian', sans-serif;
+}
+
+#recipeResults {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    color: rgb(253, 253, 254);
+    
+}
+
+.recipe-card {
+    background-color: #807e7e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-image: url("https://ucarecdn.com/49d5f80c-4b1a-4637-8f0b-a0a06bd5cdfa/-/crop/800x420/0,55/-/resize/1200x630/-/resize/x300/");
+    background-size: 220px;
+    background-repeat: no-repeat;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px ;
+}
+
+p {
+    font-size: 14px;
+    color: #fcf7f7;
+    margin: 5px;
+}
